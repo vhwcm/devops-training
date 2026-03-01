@@ -15,5 +15,5 @@ jobs:
 
       - name: Build e Push
         run: |
-          docker build -t meu-usuario/meu-app:latest .
-          docker push meu-usuario/meu-app:latest
+          docker build -t ${{ secrets.DOCKER_USER }}/server-node:latest .
+          docker push ${{ secrets.DOCKER_USER }}/server-node:latest
