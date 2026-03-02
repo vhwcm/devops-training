@@ -1,2 +1,3 @@
 aws
-localstack_data
+localstack_data/
+.terraform/
